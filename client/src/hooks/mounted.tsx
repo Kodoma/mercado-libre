@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const useHasMounted = () => {
     const [hasMounted, setHasMounted] = React.useState(false);
@@ -6,6 +6,6 @@ const useHasMounted = () => {
         setHasMounted(true);
     }, []);
     return hasMounted;
-}
+};
 
 export default useHasMounted;

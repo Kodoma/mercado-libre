@@ -12,23 +12,29 @@
 .autocomplete {
     width: 80%;
     display: inline-block;
-    marginTop: 16px;
+    margintop: 16px;
     margin: 0 10%;
 }
 
 .input {
     background: #fff;
-    background: -moz-linear-gradient(top,#fff 0,#f1f1f1 100%);
-    background: -ms-linear-gradient(top,#fff 0,#f1f1f1 100%);
-    background: -o-linear-gradient(top,#fff 0,#f1f1f1 100%);
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#f1f1f1));
-    background: -webkit-linear-gradient(top,#fff 0,#f1f1f1 100%);
-    background: linear-gradient(to bottom,#fff 0,#f1f1f1 100%);
+    background: -moz-linear-gradient(top, #fff 0, #f1f1f1 100%);
+    background: -ms-linear-gradient(top, #fff 0, #f1f1f1 100%);
+    background: -o-linear-gradient(top, #fff 0, #f1f1f1 100%);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #fff),
+        color-stop(100%, #f1f1f1)
+    );
+    background: -webkit-linear-gradient(top, #fff 0, #f1f1f1 100%);
+    background: linear-gradient(to bottom, #fff 0, #f1f1f1 100%);
 }
 
 .searchButton {
-    background: #EEEEEE !important;
-    border: 1px solid #CDCCCB;
+    background: #eeeeee !important;
+    border: 1px solid #cdcccb;
     color: #666;
     cursor: pointer;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE',endColorstr='#EEEEEE',GradientType=0);
@@ -66,7 +72,7 @@
     .autocomplete {
         width: 90%;
         display: inline-block;
-        marginTop: 8px;
-        marginLeft: 25%
+        margintop: 8px;
+        marginleft: 25%;
     }
 }

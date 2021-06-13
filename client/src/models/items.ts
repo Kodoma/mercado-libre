@@ -7,7 +7,7 @@ export interface Item {
     id: string;
     title: string;
     price: Price;
-    thumbnail: string
+    thumbnail: string;
     pictures: Pictures[];
     condition: string;
     free_shipping: boolean;

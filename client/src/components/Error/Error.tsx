@@ -1,15 +1,15 @@
-import React from "react";
-import styles from "./Error.module.css";
-import {Typography} from "@material-ui/core";
-import NotFound from "../../../assets/images/svg/notfound.svg";
+import React from 'react';
+import styles from './Error.module.css';
+import { Typography } from '@material-ui/core';
+import NotFound from '../../../assets/images/svg/notfound.svg';
 
 const ErrorComponent = () => {
     return (
         <div className={styles.errorContainer}>
             <NotFound />
-            <Typography variant={"h6"}>Parece que esta página no existe</Typography>
+            <Typography variant={'h6'}>Parece que esta página no existe</Typography>
         </div>
-    )
-}
+    );
+};
 
-export default ErrorComponent
+export default ErrorComponent;

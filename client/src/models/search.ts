@@ -9,23 +9,17 @@ export interface SuggestedQuery {
     match_end: number;
 }
 
-export interface Seller {
-}
+export interface Seller {}
 
-export interface Prices {
-}
+export interface Prices {}
 
-export interface Installments {
-}
+export interface Installments {}
 
-export interface Address {
-}
+export interface Address {}
 
-export interface Shipping {
-}
+export interface Shipping {}
 
-export interface SellerAddress {
-}
+export interface SellerAddress {}
 
 export interface Result {
     id: string;

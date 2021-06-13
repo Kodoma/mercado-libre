@@ -1,14 +1,15 @@
-import React from "react";
-import Slider from "react-slick";
-import styles from  './ImageGallery.module.css'
+import React from 'react';
+import Slider from 'react-slick';
+import styles from './ImageGallery.module.css';
 
-const ImageGallery: React.FunctionComponent<ItemsGallery> = ({pictures}: ItemsGallery): JSX.Element => {
-
-    const slides = pictures && pictures.map((i) => {
-        return (
-            <img src={i.src} />
-        );
-    });
+const ImageGallery: React.FunctionComponent<ItemsGallery> = ({
+    pictures
+}: ItemsGallery): JSX.Element => {
+    const slides =
+        pictures &&
+        pictures.map((i) => {
+            return <img src={i.src} />;
+        });
 
     const settings = {
         dots: true,
@@ -20,17 +21,13 @@ const ImageGallery: React.FunctionComponent<ItemsGallery> = ({pictures}: ItemsGa
         className: styles.carousel
     };
 
-    return (
-        <Slider {...settings}>
-            {slides}
-        </Slider>
-    );
-}
+    return <Slider {...settings}>{slides}</Slider>;
+};
 
 export default ImageGallery;
 
 interface ItemsGallery {
-    pictures: Pictures[]
+    pictures: Pictures[];
 }
 
 interface Pictures {

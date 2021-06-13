@@ -4,12 +4,12 @@
     display: flex;
     min-width: fit-content;
     border: none;
-    boxShadow: none;
+    boxshadow: none;
 }
 
 .custom {
     border: none;
-    boxShadow: none;
+    boxshadow: none;
 }
 
 .image {
@@ -56,7 +56,7 @@
 }
 
 .condition {
-    color: #878787
+    color: #878787;
 }
 
 .emptyContainer {
