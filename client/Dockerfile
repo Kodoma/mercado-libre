@@ -15,10 +15,11 @@ COPY ./next-env.d.ts next-env.d.ts
 COPY ./jest.config.js jest.config.js
 COPY ./tsconfig.json tsconfig.json
 COPY ./pages pages
-COPY ./public public
+COPY ./assets assets
 COPY ./src src
 COPY ./config config
 COPY ./setupTests.js setupTests.js
+COPY ./custom.d.ts custom.d.ts
 
 RUN npm install --loglevel info
 

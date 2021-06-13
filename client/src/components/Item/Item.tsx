@@ -25,13 +25,16 @@ const ItemProduct = () => {
     React.useEffect(() => {
 
         async function fetchItemProduct(id: string) {
-            console.log("id", id);
             if(!id) return;
             const request = await fetch(
                 "http://0.0.0.0:8080/api/items/"+ id
-            );
-            const response = await request.json();
-            setItem(response.item);
+            )
+            if(request.status === 200) {
+                const response = await request.json();
+                setItem(response.item);
+            } else {
+                await router.push("/error");
+            }
         }
 
         fetchItemProduct(id as string);

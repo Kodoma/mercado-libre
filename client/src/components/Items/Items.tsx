@@ -10,20 +10,28 @@ import Title from "./Title/Title";
 import Breadcrumb from "../BreadCrumb/Breadcrumb";
 import {isMobile} from "react-device-detect";
 import Loading from "../Loading/Loading";
-
+import NotFound from "../../../assets/images/svg/notfound.svg";
 
 const ItemsList = () => {
     const [items, setItems] = React.useState(ItemsInitState);
+    const [loading, setLoading] = React.useState(false);
     const router = useRouter();
     const search = (router) && router.query.search
 
+
     React.useEffect(() => {
+        setLoading(true);
         async function fetchItems(search: string) {
-            if(!search) return;
+            if(!search || search === "") {
+                setLoading(false);
+                return;
+            }
+
             const request = await fetch(
                 "http://0.0.0.0:8080/api/items?search="+search
             );
             const response = await request.json();
+            setLoading(false);
             setItems(response.items);
         }
 
@@ -78,7 +86,7 @@ const ItemsList = () => {
     return(
         <Box width={(isMobile) ? "100%" : "75%"}>
             <Breadcrumb search={search as string} />
-            { (content.length === 0) ? <Loading /> : content }
+            { (loading) ? <Loading /> : (items.length > 0) ? content : <EmptySearch /> }
         </Box>
     );
 }
@@ -86,3 +94,12 @@ const ItemsList = () => {
 export default ItemsList
 
 const ItemsInitState: Item[] = [];
+
+const EmptySearch = () => {
+    return (
+        <div className={styles.emptyContainer}>
+            <NotFound />
+            <Typography variant={"h6"}>Parece que no hay items para tu búsqueda prueba con otra.</Typography>
+        </div>
+    )
+}

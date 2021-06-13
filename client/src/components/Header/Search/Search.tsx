@@ -46,8 +46,8 @@ const SearchAutocomplete = () => {
                 style={{ width: '70%', display: 'inline-block', marginTop: '8px', left: '7.5%', position: 'relative'}}
                 freeSolo
                 open={open}
-                onOpen={() => {
-                    setOpen(true);
+                onOpen={(ev) => {
+                    setOpen(options.length >= 2);
                 }}
                 onClose={() => {
                     setOpen(false);

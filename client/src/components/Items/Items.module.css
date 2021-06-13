@@ -59,10 +59,21 @@
     color: #878787
 }
 
+.emptyContainer {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 @media (max-width: 812px) {
     .paper {
         width: 100%;
         min-width: auto;
     }
-
+    .emptyContainer {
+        text-align: center;
+    }
 }

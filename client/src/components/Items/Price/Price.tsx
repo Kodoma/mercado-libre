@@ -24,7 +24,10 @@ const Price: React.FunctionComponent<PriceProps> = ({id, amount, currency, free_
             { free_shipping &&
                 <div className={styles.freeShipping}>
                     <Image
-                        src={(search) ? "/images/ic_shipping_list.png" : "/images/ic_shipping_vip.png"}
+                        src={(search) ?
+                            "../../../../assets/images/ic_shipping_list.png" :
+                            "../../../../assets/images/ic_shipping_vip.png"
+                        }
                         alt="Envios Gratis"
                         width={(search) ? "18px" : "32px"}
                         height={(search) ? "18px" : "32px"}
