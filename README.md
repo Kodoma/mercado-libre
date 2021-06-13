@@ -20,9 +20,9 @@ Para correr & trabajar en este proyecto necesitas tener instalado
 ## Con Docker Compose
 - Asegurarse de tener instalado [Docker](https://docs.docker.com/engine/installation/) y [Docker Compose](https://docs.docker.com/compose/install/)
 - En la consola correr los siguientes comandos:
-  - `[sudo] docker-compose build`
-  - `[sudo] docker-compose up`
-  - `[sudo] docker-compose down --rmi all` si tenes algun problema con las imagenes que creaste: repitirlos pasos anteriores
+  - [sudo] `docker-compose build`
+  - [sudo] `docker-compose up`
+  - [sudo] `docker-compose down --rmi all` si tenes algun problema con las imagenes que creaste: repitirlos pasos anteriores
   
 - Cuando esten arriba los dos servicios acceder a: 
   - http://localhost:3000/ para acceder frontend
@@ -35,25 +35,25 @@ Para correr & trabajar en este proyecto necesitas tener instalado
 
 ### Production Mode
 [Server]
-- cd `meli-ui/server`
+- cd `mercado-libre/server`
 - `npm install`
 - `npm run build`
 - `npm run start`
 
 [Client]
 
-- cd `meli-ui/client`
+- cd `mercado-libre/client`
 - `npm run build`
 - `npm run start`
 
 ### Development Mode
 [Server]
-- cd `meli-ui/server`
+- cd `mercado-libre/server`
 - `npm install`
 - `npm run dev` - para development mode
 
 [Client]  
-- cd `meli-ui/client`
+- cd `mercado-libre/client`
 - `npm install`
 - `npm run dev` - para development mode
 
