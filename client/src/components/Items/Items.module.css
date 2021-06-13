@@ -1,0 +1,68 @@
+.paper {
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
+    min-width: fit-content;
+    border: none;
+    boxShadow: none;
+}
+
+.custom {
+    border: none;
+    boxShadow: none;
+}
+
+.image {
+    outline: none;
+    width: 160px;
+}
+
+.img {
+    object-fit: contain;
+    display: block;
+    aspect-ratio: auto 160 / 160;
+}
+
+.priceContainer {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.freeShipping {
+    margin-left: 10px;
+}
+
+.price,
+.price:hover,
+.price:link,
+.price:visited,
+.price:active,
+.price:hover {
+    color: #333333;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.title,
+.title:hover,
+.title:link,
+.title:visited,
+.title:active,
+.title:hover {
+    color: #333333 !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.condition {
+    color: #878787
+}
+
+@media (max-width: 812px) {
+    .paper {
+        width: 100%;
+        min-width: auto;
+    }
+
+}

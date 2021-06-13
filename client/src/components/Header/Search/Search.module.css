@@ -1,0 +1,73 @@
+.autocompleteContainer {
+    color: #333;
+    font-size: 16px;
+    width: 90%;
+    margin-left: 160px;
+    font-family: inherit;
+    display: inline-block;
+    right: 0px;
+    position: absolute;
+}
+
+.autocomplete {
+    width: 80%;
+    display: inline-block;
+    marginTop: 16px;
+    margin: 0 10%;
+}
+
+.input {
+    background: #fff;
+    background: -moz-linear-gradient(top,#fff 0,#f1f1f1 100%);
+    background: -ms-linear-gradient(top,#fff 0,#f1f1f1 100%);
+    background: -o-linear-gradient(top,#fff 0,#f1f1f1 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(top,#fff 0,#f1f1f1 100%);
+    background: linear-gradient(to bottom,#fff 0,#f1f1f1 100%);
+}
+
+.searchButton {
+    background: #EEEEEE !important;
+    border: 1px solid #CDCCCB;
+    color: #666;
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE',endColorstr='#EEEEEE',GradientType=0);
+    height: 55px;
+    position: absolute;
+    width: 55px;
+    top: 16px;
+    left: 5%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: 18px 18px;
+    width: 44px;
+    height: 40px;
+    background-image: url(http://static.mlstatic.com/org-img/commons/assets/sprite.png?v1);
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: -9999px;
+}
+
+@media (max-width: 812px) {
+    .autocompleteContainer {
+        height: 48px;
+        margin-left: 15%;
+    }
+
+    .searchButton {
+        display: none;
+        visibility: hidden;
+    }
+
+    .autocomplete {
+        width: 90%;
+        display: inline-block;
+        marginTop: 8px;
+        marginLeft: 25%
+    }
+}

@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  meli-ui:
+    build: client
+    command: sh ./build.sh
+    volumes:
+      - ./build.sh:/meli-ui/client/build.sh
+    ports:
+      - "3000:3000"
+  meli-back:
+    build: server
+    command: sh ./build.sh
+    volumes:
+      - ./build.sh:/meli-ui/client/build.sh
+    ports:
+      - "8080:8080"

@@ -1,0 +1,30 @@
+.header {
+    background-color: #fff159;
+    border: 0;
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.logo {
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.5/mercadolibre/logo__large_plus.png);
+    height: 34px;
+    top: 30px;
+    width: 134px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    left: 5%;
+}
+
+@media (max-width: 812px) {
+    .logo {
+        background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.5/mercadolibre/logo__small@2x.png);
+        background-size: 44px 31px;
+        width: 44px;
+        height: 32px;
+        top: 24px;
+        left: 10px;
+    }
+}

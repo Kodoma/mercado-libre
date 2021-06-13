@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Breadcrumb should render my Breadcrumb component 1`] = `
+Array [
+  <div
+    className="breadcrumbs"
+  >
+    
+  </div>,
+]
+`;

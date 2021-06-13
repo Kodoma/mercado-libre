@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Search should render my Search component 1`] = `
+Array [
+  <form
+    className="autocompleteContainer"
+    onSubmit={[Function]}
+  >
+    <WithStyles(ForwardRef(Autocomplete))
+      freeSolo={true}
+      getOptionLabel={[Function]}
+      getOptionSelected={[Function]}
+      id="q"
+      loading={false}
+      onClose={[Function]}
+      onInputChange={[Function]}
+      onOpen={[Function]}
+      open={false}
+      options={Array []}
+      renderInput={[Function]}
+      style={
+        Object {
+          "display": "inline-block",
+          "left": "5%",
+          "marginTop": "8px",
+          "position": "relative",
+          "width": "80%",
+        }
+      }
+    />
+    <WithStyles(ForwardRef(Button))
+      className="searchButton"
+      type="submit"
+    >
+      <div
+        className="searchIcon"
+      />
+    </WithStyles(ForwardRef(Button))>
+  </form>,
+]
+`;

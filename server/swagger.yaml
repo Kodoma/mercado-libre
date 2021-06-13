@@ -1,0 +1,57 @@
+
+tags:
+- name: Meli Server
+  description: Meli Server API
+
+paths:
+  # [GET] Items search
+  /items?search={seach}:
+    get:
+      parameters:
+        - in: query
+          name: search
+          schema:
+            type: string
+          description: "ex: iphone"
+      tags:
+      - items by query
+
+      responses:
+        200:
+          description: 'OK'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        500:
+          description: 'Server Error'
+
+  /items/{id}:
+    get:
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          description: "ex: MLA901420435"
+      tags:
+        - item by id
+
+      responses:
+        200:
+          description: 'OK'
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+        500:
+          description: 'Server Error'
+
+
+schemes:
+ - https
+ - http

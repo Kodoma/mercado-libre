@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Header should render my Header component 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <a
+      className="logo"
+      href="//www.mercadolibre.com.ar"
+    >
+      Mercado Libre Argentina - Donde comprar y vender de todo
+    </a>
+    <SearchAutocomplete />
+  </header>,
+]
+`;

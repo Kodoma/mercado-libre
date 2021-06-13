@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Items should render my Items component 1`] = `
+Array [
+  <Styled(MuiBox)
+    width="75%"
+  >
+    <Breadcrumb
+      search={null}
+    />
+    <WithStyles(ForwardRef(CircularProgress))
+      size={40}
+    />
+  </Styled(MuiBox)>,
+]
+`;
