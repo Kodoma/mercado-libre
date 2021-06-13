@@ -20,9 +20,9 @@ Para correr & trabajar en este proyecto necesitas tener instalado
 ## Con Docker Compose
 - Asegurarse de tener instalado [Docker](https://docs.docker.com/engine/installation/) y [Docker Compose](https://docs.docker.com/compose/install/)
 - En la consola correr los siguientes comandos:
-  - `docker-compose build`
-  - `docker-compose up`
-  - `docker-compose down --rmi all` si tenes algun problema con las imagenes que creaste: repitirlos pasos anteriores
+  - `[sudo] docker-compose build`
+  - `[sudo] docker-compose up`
+  - `[sudo] docker-compose down --rmi all` si tenes algun problema con las imagenes que creaste: repitirlos pasos anteriores
   
 - Cuando esten arriba los dos servicios acceder a: 
   - http://localhost:3000/ para acceder frontend
