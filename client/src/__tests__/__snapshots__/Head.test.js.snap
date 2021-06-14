@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Head should render my Head component 1`] = `
+Array [
+  <Head>
+    <title>
+      Codo a codo desde casa en Mercado Libre Argentina
+    </title>
+    <meta
+      content="Encontrá lo que buscás en Codo a codo desde casa. Todo lo que necesitas lo conseguís en un solo lugar, en Mercado Libre"
+      data-head-react="true"
+      name="description"
+    />
+    <meta
+      content="IE=edge"
+      httpEquiv="X-UA-Compatible"
+    />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <meta
+      content="True"
+      name="HandheldFriendly"
+    />
+    <meta
+      content="on"
+      httpEquiv="cleartype"
+    />
+    <meta
+      content="samesite=true"
+      name="browser-support"
+    />
+    <link
+      data-head-react="true"
+      href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.5/mercadolibre/favicon.svg"
+      rel="icon"
+    />
+    <link
+      data-head-react="true"
+      href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.5/mercadolibre/180x180.png"
+      rel="apple-touch-icon"
+    />
+    <link
+      charSet="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </Head>,
+]
+`;

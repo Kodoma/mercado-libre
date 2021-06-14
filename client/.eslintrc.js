@@ -26,8 +26,10 @@ module.exports = {
         'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
         'prettier'
     ],
-    plugins: ['@typescript-eslint', 'prettier'],
+    plugins: ['@typescript-eslint', 'prettier', 'react-hooks'],
     rules: {
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
         'react/react-in-jsx-scope': 'off',
         'jsx-a11y/anchor-is-valid': [
             'error',

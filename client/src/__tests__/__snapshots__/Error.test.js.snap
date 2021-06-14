@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Search should render my Search component 1`] = `
+Array [
+  <div
+    className="errorContainer"
+  >
+    <NotFound
+      height="154"
+      width="251"
+      xmlns="http://www.w3.org/2000/svg"
+    />
+    <WithStyles(ForwardRef(Typography))
+      variant="h6"
+    >
+      Parece que esta página no existe
+    </WithStyles(ForwardRef(Typography))>
+  </div>,
+]
+`;

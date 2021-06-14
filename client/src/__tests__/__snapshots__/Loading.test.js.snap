@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Loading should render my Loading component 1`] = `
+Array [
+  <div
+    className="loadingContainer"
+  >
+    <WithStyles(ForwardRef(CircularProgress))
+      size={40}
+    />
+  </div>,
+]
+`;

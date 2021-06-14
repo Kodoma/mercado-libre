@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Snapshot Pages renders error page /error 1`] = `
+Array [
+  <Layout>
+    <ErrorComponent />
+  </Layout>,
+]
+`;
+
 exports[`Snapshot Pages renders homepage unchanged 1`] = `
 Array [
   <Layout>

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Price should render my Price component 1`] = `
+Array [
+  <div
+    className="priceContainer"
+  >
+    <WithStyles(ForwardRef(Link))
+      className="price"
+      href="/items/1"
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        <NumberFormat
+          allowEmptyFormatting={false}
+          allowLeadingZeros={false}
+          allowNegative={true}
+          decimalSeparator="."
+          displayType="text"
+          fixedDecimalScale={false}
+          isAllowed={[Function]}
+          isNumericString={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseUp={[Function]}
+          onValueChange={[Function]}
+          prefix="ARS"
+          suffix=""
+          thousandSeparator={true}
+          thousandsGroupStyle="thousand"
+          type="text"
+          value="100"
+        />
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Link))>
+  </div>,
+]
+`;

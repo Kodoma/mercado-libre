@@ -4,6 +4,7 @@ import Items from '../../pages/items/index';
 import Item from '../../pages/items/[id]';
 import { cleanup } from '@testing-library/react';
 import { shallow } from 'enzyme';
+import Error from "../../pages/error";
 
 describe('Snapshot Pages', () => {
     afterEach(cleanup);
@@ -30,6 +31,11 @@ describe('Snapshot Pages', () => {
             }
         };
         const component = shallow(<Item router={router} />);
+        expect(component.getElements()).toMatchSnapshot();
+    });
+
+    it('renders error page /error', () => {
+        const component = shallow(<Error />);
         expect(component.getElements()).toMatchSnapshot();
     });
 });

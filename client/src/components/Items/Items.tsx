@@ -27,8 +27,7 @@ const ItemsList = () => {
     const search = router && router.query.search;
 
     React.useEffect(() => {
-        setLoading(true);
-        async function fetchItems(search: string) {
+        const fetchItems = async (search: string)  => {
             if (!search || search === '') {
                 setLoading(false);
                 return;
@@ -39,7 +38,7 @@ const ItemsList = () => {
             setLoading(false);
             setItems(response.items);
         }
-
+        setLoading(true);
         fetchItems(search as string);
     }, [search]);
 

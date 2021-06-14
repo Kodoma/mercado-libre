@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import 'jsdom-global/register';
+import {mount, shallow} from 'enzyme';
 import Breadcrumb from '../components/BreadCrumb/Breadcrumb';
 
 describe('tests Breadcrumb', () => {
@@ -7,4 +8,9 @@ describe('tests Breadcrumb', () => {
         const component = shallow(<Breadcrumb search={'iphone'} />);
         expect(component.getElements()).toMatchSnapshot();
     });
+
+    it('should render without throwing an error', function () {
+        const wrap = mount(<Breadcrumb search={''} />)
+        expect(wrap.find('div').text()).toBe('')
+    })
 });

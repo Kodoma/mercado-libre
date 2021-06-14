@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Title should render my Title component 1`] = `
+Array [
+  <WithStyles(ForwardRef(Link))
+    className="title"
+    href="/items/1"
+  >
+    <WithStyles(ForwardRef(Typography))
+      gutterBottom={true}
+      variant="body2"
+    >
+      iphone
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Link))>,
+]
+`;
