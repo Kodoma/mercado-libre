@@ -1,5 +1,5 @@
 import * as express from 'express';
-import MeliController from "../controllers/meli.controller";
+import MeliController from '../controllers/meli.controller';
 
 const router = express.Router();
 

@@ -6,7 +6,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import errorMiddleware from './middlewares/error.middleware';
 import { logger, stream } from './utils/logger';
 import { health } from './middlewares/health.middleware';
-import router from "./routes/meli.route";
+import router from './routes/meli.route';
 
 class App {
   public app: express.Application;
@@ -14,15 +14,15 @@ class App {
   public env: string;
 
   public async bootstrap(): Promise<App> {
-      this.app = express();
-      this.port = process.env.PORT || 8080;
-      this.env = process.env.NODE_ENV || 'development';
+    this.app = express();
+    this.port = process.env.PORT || 8080;
+    this.env = process.env.NODE_ENV || 'development';
 
-      this.initializeErrorHandling()
-      this.initializeMiddlewares();
-      this.initializeRoutes();
-      this.initializeSwagger();
-      return this;
+    this.initializeErrorHandling();
+    this.initializeMiddlewares();
+    this.initializeRoutes();
+    this.initializeSwagger();
+    return this;
   }
 
   public listen() {
@@ -32,9 +32,8 @@ class App {
   }
 
   public getServer() {
-    if(!this.app)
-      throw Error('Application was not right initialized')
-    return this.app
+    if (!this.app) throw Error('Application was not right initialized');
+    return this.app;
   }
 
   private initializeMiddlewares() {
@@ -56,9 +55,9 @@ class App {
         info: {
           title: 'REST API',
           version: '1.0.0',
-          description: 'Meli Server Api'
+          description: 'Meli Server Api',
         },
-        servers: [{url: `/api`}]
+        servers: [{ url: `/api` }],
       },
       apis: ['swagger.yaml'],
     };

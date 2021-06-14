@@ -14,12 +14,16 @@ COPY ./next.config.cjs next.config.cjs
 COPY ./next-env.d.ts next-env.d.ts
 COPY ./jest.config.js jest.config.js
 COPY ./tsconfig.json tsconfig.json
+COPY ./.eslintrc.js .eslintrc.js
 COPY ./pages pages
-COPY public assets
+COPY public public
 COPY ./src src
 COPY ./config config
 COPY ./setupTests.js setupTests.js
 COPY ./custom.d.ts custom.d.ts
+COPY ./postcss.config.js postcss.config.js
+COPY ./.prettierrc .prettierrc
+COPY ./.prettierignore .prettierignore
 
 RUN npm install --loglevel info
 

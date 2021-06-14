@@ -1,12 +1,12 @@
 export interface MeliSearchResponse {
   author: Author;
   categories: string[];
-  items: Item[]
+  items: Item[];
 }
 
 export interface Author {
-  name: string
-  lastname: string
+  name: string;
+  lastname: string;
 }
 
 export interface Item {

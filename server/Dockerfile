@@ -8,7 +8,6 @@ WORKDIR /usr/code/meli-ui/server
 COPY ./package.json package.json
 COPY ./package-lock.json package-lock.json
 COPY ./src src
-COPY ./.eslintignore .eslintignore
 COPY ./.eslintrc .eslintrc
 COPY ./.huskyrc .huskyrc
 COPY ./.prettierrc .prettierrc

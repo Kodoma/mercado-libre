@@ -1,12 +1,9 @@
-import {meliClient, MeliConnector} from "../connectors/meli.connector";
-import {meliItemsConverter, MeliItemsConverter} from "../converters/meli.items.converter";
-import {MeliItemResponse, MeliSearchResponse} from "../models/meli.models";
+import { meliClient, MeliConnector } from '../connectors/meli.connector';
+import { meliItemsConverter, MeliItemsConverter } from '../converters/meli.items.converter';
+import { MeliItemResponse, MeliSearchResponse } from '../models/meli.models';
 
 class MeliServiceImpl implements MeliService {
-  constructor(
-    private meliConnector: MeliConnector,
-    private meliConverter: MeliItemsConverter
-  ) {}
+  constructor(private meliConnector: MeliConnector, private meliConverter: MeliItemsConverter) {}
 
   async getItems(search: string): Promise<MeliSearchResponse> {
     const response = await this.meliConnector.getItems(search);
@@ -20,11 +17,8 @@ class MeliServiceImpl implements MeliService {
 }
 
 export interface MeliService {
-  getItems: (search: string) => Promise<MeliSearchResponse>
-  getItemById: (id: string) => Promise<MeliItemResponse>
+  getItems: (search: string) => Promise<MeliSearchResponse>;
+  getItemById: (id: string) => Promise<MeliItemResponse>;
 }
 
-export const meliService = new MeliServiceImpl(
-  meliClient,
-  meliItemsConverter
-)
+export const meliService = new MeliServiceImpl(meliClient, meliItemsConverter);

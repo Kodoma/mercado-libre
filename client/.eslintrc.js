@@ -24,10 +24,9 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
-        "prettier",
-        "prettier/@typescript-eslint"
+        'prettier'
     ],
-    plugins: ["@typescript-eslint", "prettier"],
+    plugins: ['@typescript-eslint', 'prettier'],
     rules: {
         'react/react-in-jsx-scope': 'off',
         'jsx-a11y/anchor-is-valid': [

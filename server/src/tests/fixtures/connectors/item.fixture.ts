@@ -1,12 +1,6 @@
 import {
-  Attribute,
-  Description, DifferentialPricing, Location,
   MeliItemResponse,
-  MeliSearchResponse,
-  Picture,
-  Prices,
-  SaleTerm, SellerAddress,
-  Shipping
+  MeliSearchResponse
 } from "../../../connectors/models";
 
 function buildFn<T>(model: T): (override?: Partial<T>) => T {

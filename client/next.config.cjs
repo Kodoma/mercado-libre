@@ -6,4 +6,7 @@ const withCSS = require("@zeit/next-css");
 
 module.exports = withPlugins([ withSass, withImages, withFonts, withCSS], {
     assetPrefix: "",
+    future: {
+        webpack5: true,
+    }
 });

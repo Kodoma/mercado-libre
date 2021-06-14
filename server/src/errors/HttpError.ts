@@ -8,13 +8,13 @@ class HttpError extends Error {
     this.message = message;
   }
 
-  static notFound(message = 'Not Found'){
+  static notFound(message = 'Not Found') {
     return new HttpError(404, message);
   }
-  static unauthorized(message = 'Unauthorized'){
+  static unauthorized(message = 'Unauthorized') {
     return new HttpError(401, message);
   }
-  static conflict(message = 'Conflict'){
+  static conflict(message = 'Conflict') {
     return new HttpError(409, message);
   }
 }

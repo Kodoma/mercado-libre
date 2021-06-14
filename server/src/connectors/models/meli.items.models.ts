@@ -1,4 +1,4 @@
-import { MeliItemResponse } from "./index";
+import { MeliItemResponse } from './index';
 
 export interface MeliSearchResponse {
   site_id: string;
@@ -150,9 +150,6 @@ export interface Conditions {
   eligible: boolean;
 }
 
-export interface Metadata {
-}
-
 export interface Price {
   id: string;
   type: string;
@@ -161,7 +158,7 @@ export interface Price {
   regular_amount?: any;
   currency_id: string;
   exchange_rate_context: string;
-  metadata: Metadata;
+  metadata: any;
   last_updated: string;
 }
 
@@ -263,5 +260,3 @@ export interface AvailableFilter {
   type: string;
   values: Value3[];
 }
-
-

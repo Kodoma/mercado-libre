@@ -5,12 +5,15 @@ Array [
   <header
     className="header"
   >
-    <a
-      className="logo"
-      href="//www.mercadolibre.com.ar"
+    <Link
+      href="/"
     >
-      Mercado Libre Argentina - Donde comprar y vender de todo
-    </a>
+      <a
+        className="logo"
+      >
+        Mercado Libre Argentina - Donde comprar y vender de todo
+      </a>
+    </Link>
     <SearchAutocomplete />
   </header>,
 ]

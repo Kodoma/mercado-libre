@@ -7,9 +7,9 @@
   "scripts": {
     "start": "npm run build && node build/server.js",
     "dev": "nodemon",
-    "build": "npm test && tsc",
+    "build": "npm run lint && npm run test && tsc",
     "test": "rm -rf build && jest --forceExit --detectOpenHandles",
-    "lint": "eslint --ignore-path .gitignore --ext .ts src/",
+    "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
@@ -48,5 +48,12 @@
     "ts-jest": "^26.5.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.2"
-  }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "eslintIgnore": ["**/tests/*"]
 }

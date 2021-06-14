@@ -8,9 +8,7 @@ Array [
     <Breadcrumb
       search={null}
     />
-    <WithStyles(ForwardRef(CircularProgress))
-      size={40}
-    />
+    <EmptySearch />
   </Styled(MuiBox)>,
 ]
 `;

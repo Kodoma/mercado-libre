@@ -4,10 +4,10 @@ import { AxiosError } from 'axios';
 import HttpError from '../errors/HttpError';
 
 function errorStatusCode(error: AxiosError | Error | HttpError) {
-  if(error instanceof HttpError) {
+  if (error instanceof HttpError) {
     return error.httpStatusCode;
   }
-  if((error as AxiosError).isAxiosError) {
+  if ((error as AxiosError).isAxiosError) {
     return (error as AxiosError).response.status;
   }
   return undefined;

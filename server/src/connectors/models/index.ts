@@ -1,9 +1,5 @@
-import {City2, Country2, Prices, State2, Value} from "./meli.items.models";
-import {Description, Picture, SaleTerm} from "./meli.item.models";
-
-export interface Location {
-
-}
+import { City2, Country2, Prices, State2, Value } from './meli.items.models';
+import { Description, Picture, SaleTerm } from './meli.item.models';
 
 export interface Shipping {
   free_shipping: boolean;
@@ -81,7 +77,7 @@ export interface MeliItemResponse {
   international_delivery_mode?: string;
   seller_address?: SellerAddress;
   seller_contact?: any;
-  location?: Location;
+  location?: any;
   coverage_areas?: any[];
   attributes?: Attribute[];
   warnings?: any[];

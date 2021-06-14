@@ -5,10 +5,10 @@
     "modules": "auto",
     "scripts": {
         "dev": "next dev",
-        "build": "rm -rf .next npm run test && next build",
+        "build": "rm -rf .next && npm run lint && npm run format && npm run test && next build",
         "start": "npm run build && next start",
         "test": "rm -rf build && jest --forceExit --detectOpenHandles",
-        "lint": "eslint --fix .",
+        "lint": "eslint --fix . ",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
         "type-check": "tsc --pretty --noEmit",
         "prepare": "cd .. husky install client/.husky"
@@ -17,10 +17,15 @@
         "@jest/types": "^27.0.2",
         "@material-ui/core": "^4.11.4",
         "@material-ui/lab": "^4.0.0-alpha.58",
+        "@types/parse": "^2.18.6",
+        "autoprefixer": "^10.2.6",
         "cross-fetch": "^3.1.4",
         "next": "10.2.3",
         "next-compose-plugins": "^2.2.1",
         "next-images": "^1.8.1",
+        "postcss": "^8.3.4",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-preset-env": "^6.7.0",
         "query-string": "^7.0.0",
         "react": "17.0.2",
         "react-device-detect": "^1.17.0",
@@ -28,7 +33,8 @@
         "react-hook-form": "^7.7.1",
         "react-image-gallery": "^1.1.1",
         "react-number-format": "^4.6.3",
-        "react-slick": "^0.28.1"
+        "react-slick": "^0.28.1",
+        "tailwindcss": "^2.1.4"
     },
     "devDependencies": {
         "@babel/core": "^7.14.3",
@@ -52,6 +58,7 @@
         "@types/react": "^17.0.8",
         "@types/react-image-gallery": "^1.0.3",
         "@types/react-test-renderer": "^17.0.1",
+        "@typescript-eslint/eslint-plugin": "^4.26.1",
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
         "@zeit/next-css": "^1.0.1",
         "@zeit/next-sass": "^1.0.1",
@@ -65,21 +72,31 @@
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.24.0",
         "eslint-plugin-react-hooks": "^4.2.0",
+        "husky": "^6.0.0",
         "identity-obj-proxy": "^3.0.0",
         "ignore-styles": "^5.0.1",
         "jest": "^27.0.4",
+        "jest-transform-stub": "^2.0.0",
         "lint-staged": "^11.0.0",
         "next-fonts": "^1.5.1",
         "prettier": "^2.3.1",
         "react-intl": "^5.20.1",
         "ts-jest": "^27.0.3",
         "typescript": "^4.3.2",
-        "undefined": "^0.1.0",
-        "husky": "^6.0.0"
+        "undefined": "^0.1.0"
     },
     "husky": {
         "hooks": {
             "pre-commit": "npm run lint"
         }
-    }
+    },
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    },
+    "eslintIgnore": [
+        "**/tests/*"
+    ]
 }

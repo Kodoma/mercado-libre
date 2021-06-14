@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Pages renders homepage unchanged 1`] = `
+Array [
+  <Layout>
+    <React.Fragment />
+  </Layout>,
+]
+`;
+
+exports[`Snapshot Pages renders item page unchanged on route items/[id] 1`] = `
+Array [
+  <Layout>
+    <ItemProduct />
+  </Layout>,
+]
+`;
+
+exports[`Snapshot Pages renders items list page unchanged on route items/search=iphone 1`] = `
+Array [
+  <Layout>
+    <ItemsList />
+  </Layout>,
+]
+`;
