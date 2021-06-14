@@ -36,8 +36,8 @@ const Price: React.FunctionComponent<PriceProps> = ({ id, amount, currency, free
                     <Image
                         src={
                             search
-                                ? '../../../../assets/images/ic_shipping_list.png'
-                                : '../../../../assets/images/ic_shipping_vip.png'
+                                ? '/images/ic_shipping_list.png'
+                                : '/images/ic_shipping_vip.png'
                         }
                         alt="Envios Gratis"
                         width={search ? '18px' : '32px'}

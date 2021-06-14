@@ -15,7 +15,7 @@ COPY ./next-env.d.ts next-env.d.ts
 COPY ./jest.config.js jest.config.js
 COPY ./tsconfig.json tsconfig.json
 COPY ./pages pages
-COPY ./assets assets
+COPY public assets
 COPY ./src src
 COPY ./config config
 COPY ./setupTests.js setupTests.js

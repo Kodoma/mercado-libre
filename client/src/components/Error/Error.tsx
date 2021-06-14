@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Error.module.css';
 import { Typography } from '@material-ui/core';
-import NotFound from '../../../assets/images/svg/notfound.svg';
+import NotFound from '../../../public/images/svg/notfound.svg';
 
 const ErrorComponent = () => {
     return (

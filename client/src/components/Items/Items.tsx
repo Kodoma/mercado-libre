@@ -18,7 +18,7 @@ import Title from './Title/Title';
 import Breadcrumb from '../BreadCrumb/Breadcrumb';
 import { isMobile } from 'react-device-detect';
 import Loading from '../Loading/Loading';
-import NotFound from '../../../assets/images/svg/notfound.svg';
+import NotFound from '../../../public/images/svg/notfound.svg';
 
 const ItemsList = () => {
     const [items, setItems] = React.useState(ItemsInitState);
