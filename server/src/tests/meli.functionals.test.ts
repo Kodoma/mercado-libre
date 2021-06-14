@@ -84,4 +84,16 @@ describe('Testing Meli Server Middle-End', () => {
     });
   });
 
+  describe('[Get] test /health', () => {
+    const itemResponse = connectorFixtures.buildItemResponse()
+
+    it('[GET] Get 200 when ping', () => {
+
+      return request(app.getServer())
+        .get(`/health`)
+        .expect(200)
+    });
+
+  });
+
 })

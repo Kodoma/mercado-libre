@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tests Search should render my Item component 1`] = `
+exports[`tests Item should render my Item component 1`] = `
 Array [
   <React.Fragment>
     <Loading />

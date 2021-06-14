@@ -8,7 +8,7 @@
     "start": "npm run build && node build/server.js",
     "dev": "nodemon",
     "build": "npm run lint && npm run test && tsc",
-    "test": "rm -rf build && jest --forceExit --detectOpenHandles",
+    "test": "rm -rf build && jest --forceExit --detectOpenHandles --coverage",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -16,6 +16,7 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "istanbul": "^0.4.5",
     "morgan": "^1.10.0",
     "swagger-jsdoc": "^6.0.0",
     "swagger-ui-express": "^4.1.6",
@@ -55,5 +56,7 @@
       "node": true
     }
   },
-  "eslintIgnore": ["**/tests/*"]
+  "eslintIgnore": [
+    "**/tests/*"
+  ]
 }
