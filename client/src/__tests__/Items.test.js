@@ -5,7 +5,7 @@ import Items from '../components/Items/Items';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 
-describe('tests Items', () => {
+describe('__tests__ Items', () => {
     it('should render my Items component', () => {
         const component = shallow(<Items />);
         expect(component.getElements()).toMatchSnapshot();

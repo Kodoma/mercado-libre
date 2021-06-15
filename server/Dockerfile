@@ -11,10 +11,12 @@ COPY ./src src
 COPY ./.eslintrc .eslintrc
 COPY ./.huskyrc .huskyrc
 COPY ./.prettierrc .prettierrc
+COPY ./.prettierignore .prettierignore
 COPY ./nodemon.json nodemon.json
 COPY ./tsconfig.json tsconfig.json
 COPY ./jest.config.js jest.config.js
 COPY ./swagger.yaml swagger.yaml
+
 
 RUN npm install --loglevel info
 

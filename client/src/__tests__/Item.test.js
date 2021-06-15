@@ -4,7 +4,7 @@ import Item from "../components/Item/Item";
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 
-describe('tests Item', () => {
+describe('__tests__ Item', () => {
     it('should render my Item component', () => {
         useRouter.mockImplementationOnce(() => ({
             query: { id: 'MLA923362627'},

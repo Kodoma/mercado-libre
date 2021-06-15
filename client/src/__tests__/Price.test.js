@@ -5,7 +5,7 @@ import Price from "../components/Items/Price/Price";
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 
-describe('tests Price', () => {
+describe('__tests__ Price', () => {
 
     it('should render my Price component', () => {
         useRouter.mockImplementationOnce(() => ({

@@ -4,7 +4,7 @@ import {shallow} from 'enzyme';
 import Head from "../components/Head/Head";
 
 
-describe('tests Head', () => {
+describe('__tests__ Head', () => {
     it('should render my Head component', () => {
         const component = shallow(<Head />);
         expect(component.getElements()).toMatchSnapshot();

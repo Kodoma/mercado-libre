@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tests Title should render my Title component 1`] = `
+exports[`__tests__ Title should render my Title component 1`] = `
 Array [
   <WithStyles(ForwardRef(Link))
     className="title"

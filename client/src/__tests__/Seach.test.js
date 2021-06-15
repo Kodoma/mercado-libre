@@ -5,7 +5,7 @@ import Search from '../components/Header/Search/Search';
 
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 
-describe('tests Search', () => {
+describe('__tests__ Search', () => {
     let component = shallow(<Search />);
 
     beforeEach(() => {

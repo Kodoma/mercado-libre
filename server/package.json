@@ -8,7 +8,7 @@
     "start": "npm run build && node build/server.js",
     "dev": "nodemon",
     "build": "npm run lint && npm run test && tsc",
-    "test": "rm -rf build && jest --forceExit --detectOpenHandles --coverage",
+    "test": "rm -rf build && jest -- -u --forceExit --detectOpenHandles --coverage",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "npm run lint -- --fix"
   },

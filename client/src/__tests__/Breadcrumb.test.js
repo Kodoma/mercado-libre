@@ -3,7 +3,7 @@ import 'jsdom-global/register';
 import {mount, shallow} from 'enzyme';
 import Breadcrumb from '../components/BreadCrumb/Breadcrumb';
 
-describe('tests Breadcrumb', () => {
+describe('__tests__ Breadcrumb', () => {
     it('should render my Breadcrumb component', () => {
         const component = shallow(<Breadcrumb search={'iphone'} />);
         expect(component.getElements()).toMatchSnapshot();

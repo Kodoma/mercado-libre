@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tests Price should render my Price component 1`] = `
+exports[`__tests__ Price should render my Price component 1`] = `
 Array [
   <div
     className="priceContainer"

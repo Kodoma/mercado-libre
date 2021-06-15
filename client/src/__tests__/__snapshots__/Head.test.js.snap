@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tests Head should render my Head component 1`] = `
+exports[`__tests__ Head should render my Head component 1`] = `
 Array [
   <Head>
     <title>

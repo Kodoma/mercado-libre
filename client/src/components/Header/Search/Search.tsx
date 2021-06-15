@@ -3,7 +3,6 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import styles from './Search.module.css';
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
 import { Button } from '@material-ui/core';
@@ -40,7 +39,7 @@ const SearchAutocomplete = () => {
     }, [open]);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.autocompleteContainer}>
+        <form onSubmit={handleSubmit(onSubmit)} className={"autocompleteContainer"}>
             <Autocomplete
                 id="q"
                 style={{
@@ -78,7 +77,7 @@ const SearchAutocomplete = () => {
                         }}
                         InputProps={{
                             ...params.InputProps,
-                            className: styles.input,
+                            className: "input",
                             disableUnderline: true,
                             endAdornment: (
                                 <React.Fragment>
@@ -92,8 +91,8 @@ const SearchAutocomplete = () => {
                     />
                 )}
             />
-            <Button type="submit" className={styles.searchButton}>
-                <div className={styles.searchIcon}></div>
+            <Button type="submit" className={"searchButton"}>
+                <div className={"searchIcon"}></div>
             </Button>
         </form>
     );

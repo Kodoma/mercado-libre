@@ -2,7 +2,7 @@ import React from 'react';
 import { Item } from '../../models/items';
 import fetch from 'cross-fetch';
 import styles from './Item.module.css';
-import { Button, Card, CardContent, Grid, Paper, Typography } from '@material-ui/core';
+import { Button, Card, CardContent, Grid, Typography } from '@material-ui/core';
 import Breadcrumb from '../BreadCrumb/Breadcrumb';
 import ImageGallery from './ImageGallery/ImageGallery';
 import Price from '../Items/Price/Price';

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tests Items should render my Items component 1`] = `
+exports[`__tests__ Items should render my Items component 1`] = `
 Array [
   <Styled(MuiBox)
     width="75%"
