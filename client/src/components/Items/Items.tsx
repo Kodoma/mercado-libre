@@ -94,12 +94,22 @@ const ItemsList = () => {
         ));
 
     return (
-        <Box width={isMobile ? '100%' : '75%'}>
-            <Breadcrumb search={search as string} />
-            {loading ? <Loading /> : items.length > 0 ? content : <EmptySearch />}
-        </Box>
+        <React.Fragment>
+            {(loading) ? <Loading /> :
+                <Box width={isMobile ? '100%' : '75%'}>
+                    { (items.length > 0 ) ?
+                        <React.Fragment>
+                            <Breadcrumb search={search as string} />
+                            { content }
+                        </React.Fragment>
+                        :
+                        <EmptySearch />
+                    }
+                </Box>
+            }
+        </React.Fragment>
     );
-};
+}
 
 export default ItemsList;
 
