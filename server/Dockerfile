@@ -19,6 +19,7 @@ COPY ./swagger.yaml swagger.yaml
 COPY ./.env .env
 COPY ./.env.development .env.development
 COPY ./.env.test .env.test
+COPY ./.nvmrc .nvmrc
 
 
 RUN npm install --loglevel info

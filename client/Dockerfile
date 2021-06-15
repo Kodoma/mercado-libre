@@ -24,6 +24,7 @@ COPY ./custom.d.ts custom.d.ts
 COPY ./postcss.config.js postcss.config.js
 COPY ./.prettierrc .prettierrc
 COPY ./.prettierignore .prettierignore
+COPY ./.nvmrc .nvmrc
 
 RUN npm install --loglevel info
 

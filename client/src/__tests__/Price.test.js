@@ -21,7 +21,7 @@ describe('__tests__ Price', () => {
         expect(component.getElements()).toMatchSnapshot();
     });
 
-    it('should render Price and check value and currency', function () {
+    it('should render Price and check value and currency', () => {
         useRouter.mockImplementationOnce(() => ({
             query: { search: 'iphone' },
         }))
