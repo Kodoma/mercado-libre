@@ -52,6 +52,10 @@ Array [
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="/css/Search.module.css"
+      rel="stylesheet"
+    />
   </Head>,
 ]
 `;

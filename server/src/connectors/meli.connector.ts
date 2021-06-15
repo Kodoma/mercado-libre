@@ -1,10 +1,11 @@
 import Axios, { AxiosInstance, AxiosResponse } from 'axios';
 import { MeliSearchResponse, MeliItemResponse, ItemDescription } from './models/';
+import { API_BASE_URL } from '../utils/config';
 
 class MeliConnectorImpl implements MeliConnector {
   private readonly httpConnector: AxiosInstance;
-  private MELI_API_BASE = 'https://api.mercadolibre.com/';
-  private MELI_API_TIMEOUT = 2000;
+  private MELI_API_BASE = API_BASE_URL;
+  private MELI_API_TIMEOUT = 20000;
 
   constructor() {
     this.httpConnector = Axios.create({

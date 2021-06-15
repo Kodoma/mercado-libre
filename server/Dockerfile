@@ -16,6 +16,9 @@ COPY ./nodemon.json nodemon.json
 COPY ./tsconfig.json tsconfig.json
 COPY ./jest.config.js jest.config.js
 COPY ./swagger.yaml swagger.yaml
+COPY ./.env .env
+COPY ./.env.development .env.development
+COPY ./.env.test .env.test
 
 
 RUN npm install --loglevel info

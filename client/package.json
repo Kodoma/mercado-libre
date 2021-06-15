@@ -7,7 +7,7 @@
         "dev": "next dev",
         "build": "rm -rf .next && npm run lint && npm run format && npm run test && next build",
         "start": "npm run build && next start",
-        "test": "rm -rf build && jest --silent --forceExit --detectOpenHandles",
+        "test": "rm -rf build && jest -u --silent --forceExit --detectOpenHandles",
         "lint": "eslint --fix . ",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
         "type-check": "tsc --pretty --noEmit",
@@ -100,6 +100,6 @@
         }
     },
     "eslintIgnore": [
-        "**/tests/*"
+        "**/__tests_/*"
     ]
 }

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`__tests__ ImageGallery should render my ImageGallery component 1`] = `
+Array [
+  <Slider
+    adaptiveHeight={true}
+    className="carousel"
+    dots={true}
+    infinite={true}
+    slidesToScroll={1}
+    slidesToShow={1}
+    speed={500}
+  />,
+]
+`;

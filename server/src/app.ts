@@ -7,6 +7,15 @@ import errorMiddleware from './middlewares/error.middleware';
 import { logger, stream } from './utils/logger';
 import { health } from './middlewares/health.middleware';
 import router from './routes/meli.route';
+import {
+  SERVER_BASE,
+  SERVER_HEALTH,
+  SERVER_PORT,
+  SWAGGER_API_TITLE,
+  SWAGGER_API_URI,
+  SWAGGER_API_VERSION,
+  SWAGGER_DESCRIPTION,
+} from './utils/config';
 
 class App {
   public app: express.Application;
@@ -15,7 +24,7 @@ class App {
 
   public async bootstrap(): Promise<App> {
     this.app = express();
-    this.port = process.env.PORT || 8080;
+    this.port = SERVER_PORT;
     this.env = process.env.NODE_ENV || 'development';
 
     this.initializeErrorHandling();
@@ -37,7 +46,7 @@ class App {
   }
 
   private initializeMiddlewares() {
-    this.app.get('/health', health());
+    this.app.get(SERVER_HEALTH, health());
     this.app.use(morgan(this.env === 'production' ? 'combined' : 'dev', { stream }));
     this.app.use(cors());
     this.app.use(express.json());
@@ -45,7 +54,7 @@ class App {
   }
 
   private initializeRoutes() {
-    this.app.use(`/api`, router);
+    this.app.use(SERVER_BASE, router);
   }
 
   private initializeSwagger() {
@@ -53,17 +62,17 @@ class App {
       swaggerDefinition: {
         openapi: '3.0.0',
         info: {
-          title: 'REST API',
-          version: '1.0.0',
-          description: 'Meli Server Api',
+          title: SWAGGER_API_TITLE,
+          version: SWAGGER_API_VERSION,
+          description: SWAGGER_DESCRIPTION,
         },
-        servers: [{ url: `/api` }],
+        servers: [{ url: SERVER_BASE }],
       },
       apis: ['swagger.yaml'],
     };
 
     const specs = swaggerJSDoc(options);
-    this.app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+    this.app.use(SWAGGER_API_URI, swaggerUi.serve, swaggerUi.setup(specs));
   }
 
   private initializeErrorHandling() {

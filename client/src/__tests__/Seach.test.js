@@ -6,13 +6,8 @@ import Search from '../components/Header/Search/Search';
 const useRouter = jest.spyOn(require('next/router'), 'useRouter')
 
 describe('__tests__ Search', () => {
-    let component = shallow(<Search />);
-
-    beforeEach(() => {
-        component = shallow(<Search />);
-    });
-
     it('should render my Search component', () => {
+        const component = shallow(<Search />);
         expect(component.getElements()).toMatchSnapshot();
     });
 

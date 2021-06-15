@@ -12,4 +12,5 @@ describe('__tests__ Item', () => {
         const component = shallow(<Item />);
         expect(component.getElements()).toMatchSnapshot();
     });
+
 });

@@ -2,13 +2,12 @@
 
 exports[`__tests__ Items should render my Items component 1`] = `
 Array [
-  <Styled(MuiBox)
-    width="75%"
-  >
-    <Breadcrumb
-      search={null}
-    />
-    <EmptySearch />
-  </Styled(MuiBox)>,
+  <React.Fragment>
+    <Styled(MuiBox)
+      width="75%"
+    >
+      <EmptySearch />
+    </Styled(MuiBox)>
+  </React.Fragment>,
 ]
 `;
