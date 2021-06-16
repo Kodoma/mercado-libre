@@ -3,9 +3,9 @@
 exports[`__tests__ Layout should render my Layout component 1`] = `
 Array [
   <React.Fragment>
-    <HeadSeo />
+    <Memo(HeadSeo) />
     <WithStyles(CssBaseline) />
-    <Header />
+    <Memo(Header) />
     <main
       className="main"
     />

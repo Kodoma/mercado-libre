@@ -3,7 +3,7 @@
 exports[`Snapshot Pages renders error page /error 1`] = `
 Array [
   <Layout>
-    <ErrorComponent />
+    <Memo(ErrorComponent) />
   </Layout>,
 ]
 `;
@@ -19,7 +19,7 @@ Array [
 exports[`Snapshot Pages renders item page unchanged on route items/[id] 1`] = `
 Array [
   <Layout>
-    <ItemProduct />
+    <Memo(ItemProduct) />
   </Layout>,
 ]
 `;
@@ -27,7 +27,7 @@ Array [
 exports[`Snapshot Pages renders items list page unchanged on route items/search=iphone 1`] = `
 Array [
   <Layout>
-    <ItemsList />
+    <Memo(ItemsList) />
   </Layout>,
 ]
 `;

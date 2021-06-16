@@ -9,8 +9,9 @@ describe('__tests__ Breadcrumb', () => {
         expect(component.getElements()).toMatchSnapshot();
     });
 
-    it('should render without throwing an error', function () {
+    it('should render empty Breadcrumb', function () {
         const wrap = mount(<Breadcrumb search={''} />)
-        expect(wrap.find('div').text()).toBe('')
+        expect(wrap.find('.breadcrumbs').find('ol').text()).toBe('')
     })
+    
 });
