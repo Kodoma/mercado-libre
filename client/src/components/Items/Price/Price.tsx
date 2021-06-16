@@ -49,7 +49,7 @@ const Price: React.FunctionComponent<PriceProps> = ({ id, amount, currency, free
     );
 };
 
-export default Price;
+export default React.memo(Price);
 
 interface PriceProps {
     id: string;

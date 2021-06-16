@@ -111,7 +111,7 @@ const ItemsList = () => {
     );
 }
 
-export default ItemsList;
+export default React.memo(ItemsList);
 
 const ItemsInitState: Item[] = [];
 

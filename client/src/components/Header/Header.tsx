@@ -11,10 +11,9 @@ const Header = () => {
                     Mercado Libre Argentina - Donde comprar y vender de todo
                 </a>
             </Link>
-
             <Search />
         </header>
     );
 };
 
-export default Header;
+export default React.memo(Header);

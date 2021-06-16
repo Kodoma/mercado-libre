@@ -12,7 +12,7 @@ const Title: React.FunctionComponent<TitleProps> = ({ id, title }) => {
     );
 };
 
-export default Title;
+export default React.memo(Title);
 
 interface TitleProps {
     id: string;

@@ -7,8 +7,8 @@ const ImageGallery: React.FunctionComponent<ItemsGallery> = ({
 }: ItemsGallery): JSX.Element => {
     const slides =
         pictures &&
-        pictures.map((i) => {
-            return <img src={i.src} />;
+        pictures.map((i, index) => {
+            return <img key={index} src={i.src} />;
         });
 
     const settings = {

@@ -12,4 +12,4 @@ const ErrorComponent = () => {
     );
 };
 
-export default ErrorComponent;
+export default React.memo(ErrorComponent);

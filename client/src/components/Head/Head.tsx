@@ -44,4 +44,4 @@ const HeadSeo = () => {
     );
 };
 
-export default HeadSeo;
+export default React.memo(HeadSeo);

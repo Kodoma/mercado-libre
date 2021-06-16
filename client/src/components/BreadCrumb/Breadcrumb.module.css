@@ -2,3 +2,18 @@
     padding: 10px 0;
     color: #b5b5b5;
 }
+
+.breadcrumbsLink,
+.breadcrumbsLink:link,
+.breadcrumbsLink:visited,
+.breadcrumbsLink:active,
+.breadcrumbsLink:hover {
+    color: inherit;
+    text-decoration: none !important;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.breadcrumbsLinkBold {
+    font-weight: 800!important;
+}

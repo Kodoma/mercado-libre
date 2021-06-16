@@ -85,7 +85,7 @@ const ItemProduct = () => {
     return <React.Fragment>{item === ItemProductInitState ? <Loading /> : content}</React.Fragment>;
 };
 
-export default ItemProduct;
+export default React.memo(ItemProduct);
 
 const ItemProductInitState: Item = {
     id: '',
