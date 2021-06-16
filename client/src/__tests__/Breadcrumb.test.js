@@ -13,5 +13,5 @@ describe('__tests__ Breadcrumb', () => {
         const wrap = mount(<Breadcrumb search={''} />)
         expect(wrap.find('.breadcrumbs').find('ol').text()).toBe('')
     })
-    
+
 });
