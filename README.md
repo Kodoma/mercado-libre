@@ -16,8 +16,32 @@ Para correr & trabajar en este proyecto necesitas tener instalado
 - [Docker](https://docs.docker.com/engine/installation/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
+## El proyecto tiene implementado:
+
+## Client:
+- Test Client:
+  [Jest](https://jestjs.io/) + [Enzyme](https://enzymejs.github.io/enzyme/)
+- Coverage: 
+  [Istanbul](https://istanbul.js.org/)
+- Code Check:
+  [Linter](https://eslint.org/) + [Prettier](https://prettier.io/)
+- Code Typing:
+  [Typescript](https://www.typescriptlang.org/)
+
+## Server:  
+- Test Server:
+  [Jest](https://jestjs.io/) + [Supertest](https://github.com/visionmedia/supertest#readme)
+- Coverage:
+  [Istanbul](https://istanbul.js.org/)  
+- Code Check:
+  [Linter](https://eslint.org/) + [Prettier](https://prettier.io/)
+- Code Typing:
+  [Typescript](https://www.typescriptlang.org/)
+- Environments:
+  [dotenv](https://github.com/motdotla/dotenv#readme)
+  
 ## Instalación:
-## Con Docker Compose
+### Con Docker Compose
 - Asegurarse de tener instalado [Docker](https://docs.docker.com/engine/installation/) y [Docker Compose](https://docs.docker.com/compose/install/)
 - En la consola correr los siguientes comandos:
   - [sudo] `docker-compose build`
@@ -26,6 +50,7 @@ Para correr & trabajar en este proyecto necesitas tener instalado
   
 - Cuando esten arriba los dos servicios acceder a: 
   - http://localhost:3000/ para acceder frontend
+  - http://localhost:8080/ server  
   - http://localhost:8080/api-docs para acceder a documentacion swagger
 
 
@@ -59,4 +84,4 @@ Para correr & trabajar en este proyecto necesitas tener instalado
 
 3. Acceder a http://localhost:3000/ client
 4. Acceder a http://localhost:8080/ server
-5. Acceder a http://localhost:8080/api-docs server swagger
+5. Acceder a http://localhost:8080/api-docs [server swagger]
